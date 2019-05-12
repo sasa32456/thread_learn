@@ -4,8 +4,13 @@ import java.util.Random;
 
 public class ClassActiveUse {
 
+    static {
+        System.out.println("ClassActiveUse");
+    }
+
 
     public static void main(String[] args) throws ClassNotFoundException {
+
 //        new Obj();
 //        System.out.println(I.a);
 //        System.out.println(Obj.salary);
@@ -20,7 +25,9 @@ public class ClassActiveUse {
 
 //        Obj[] arrays = new Obj[10];//通过数组不会被初始化
 
+        //final一开始被放入常量池，不会被初始化
         System.out.println(Obj.salary);
+        //编译器无法处理，会被初始化
         System.out.println(Obj.x);
 
 
@@ -43,7 +50,7 @@ class Obj {
     }
 }
 
-class Child extends Obj{
+class Child extends Obj {
 
     public static int age = 32;
 
