@@ -1,7 +1,6 @@
 package com.n33.thread.learn.designpattern.countdown;
 
 import java.util.Random;
-import java.util.concurrent.CountDownLatch;
 import java.util.stream.IntStream;
 
 public class CustomCountDownClient {

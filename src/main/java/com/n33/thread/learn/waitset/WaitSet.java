@@ -1,8 +1,5 @@
 package com.n33.thread.learn.waitset;
 
-import java.util.Optional;
-import java.util.stream.IntStream;
-
 /**
  * 线程休息室，虚拟概念
  *

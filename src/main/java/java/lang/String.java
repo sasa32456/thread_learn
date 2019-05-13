@@ -20,6 +20,10 @@ package java.lang;
  */
 public class String {
 
+    static {
+        System.out.println("my custon string class.");
+    }
+
     //最先执行
     private static int i = 1;
 
