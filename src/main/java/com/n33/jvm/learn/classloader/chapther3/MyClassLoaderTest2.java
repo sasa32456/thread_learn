@@ -18,7 +18,7 @@ public class MyClassLoaderTest2 {
         MyClassLoader classLoader2 = new MyClassLoader("MyClassLoader-2");
 
 
-        classLoader2.setDir("F:\\IdeaProjectsLearn\\thread_learn\\classloader2");
+        classLoader2.setDir("F:\\IdeaProjectsLearn\\zzz\\classloader2");
 
 
         Class<?> aClass = classLoader1.loadClass("com.n33.jvm.learn.classloader.chapther3.MyObject");

@@ -13,7 +13,7 @@ import java.io.IOException;
 */
 public class MyClassLoader extends ClassLoader {
 
-    private final static String DEFAULT_DIR = "F:\\IdeaProjectsLearn\\thread_learn\\classloader1";
+    private final static String DEFAULT_DIR = "F:\\IdeaProjectsLearn\\zzz\\classloader1";
 
     private String dir = DEFAULT_DIR;
 
@@ -65,8 +65,8 @@ public class MyClassLoader extends ClassLoader {
         ) {
             byte[] buffer = new byte[1024];
             int len;
-            while ((len = fis.read()) != -1) {
-                baos.write(buffer);
+            while ((len = fis.read(buffer)) != -1) {
+                baos.write(buffer,0,len);
             }
             baos.flush();
             return baos.toByteArray();
